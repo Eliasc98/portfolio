@@ -664,10 +664,11 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  min-height: 60px;
   display: block;
   background: none;
   border-radius: 0;
+  margin-bottom: 14px;
 }
 
 .skills .progress .skill {
@@ -675,13 +676,17 @@ section,
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
   font-weight: 600;
   font-family: var(--heading-font);
+  line-height: 1.25;
 }
 
 .skills .progress .skill .val {
-  float: right;
+  flex: 0 0 auto;
   font-style: normal;
 }
 
@@ -695,6 +700,25 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+.skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skills .skill-tags span {
+  color: var(--heading-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 72%);
+  border-radius: 6px;
+  font-family: var(--heading-font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 8px 10px;
 }
 
 /*--------------------------------------------------------------
