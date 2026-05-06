@@ -881,6 +881,49 @@ section,
   bottom: 0;
 }
 
+.portfolio .portfolio-item-ongoing img {
+  filter: grayscale(35%) brightness(62%);
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-item-ongoing:hover img {
+  filter: grayscale(20%) brightness(74%);
+}
+
+.portfolio .portfolio-item-ongoing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+}
+
+.portfolio .portfolio-status {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 7px 11px;
+  border-radius: 6px;
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 8%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), white 25%);
+  font-family: var(--heading-font);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-item-ongoing .portfolio-info .preview-link {
+  right: 14px;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
