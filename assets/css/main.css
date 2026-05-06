@@ -721,6 +721,16 @@ section,
   padding: 8px 10px;
 }
 
+.about .about-headshot {
+  width: min(100%, 360px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
